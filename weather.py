@@ -20,7 +20,7 @@ def get_weather(city):
         return format_weather(weather)
     except requests.exceptions.HTTPError as e:
         if e.response.status_code == 400:
-            return "This city or country not Available."
+            return "This city or country is not available."
         return f"Error fetching weather data: {e}"
     except requests.exceptions.RequestException as e:
         return f"Error fetching weather data: {e}"
