@@ -1,5 +1,4 @@
-flask
-python-dotenv==1.0.1
-Requests==2.32.3
+Flask
+requests
 gunicorn
-
+python-dotenv
